@@ -1,12 +1,12 @@
 import { formatDZD } from "@/data/products";
 import { Cpu, Monitor, MemoryStick } from "lucide-react";
-import cpuImg from "@/assets/cpu.jpg";
-import gpuImg from "@/assets/gpu.jpg";
+import cpuAmdImg from "@/assets/cpu-amd.jpg";
+import gpuNvidiaImg from "@/assets/gpu-nvidia.jpg";
 import ramImg from "@/assets/ram.jpg";
 
 const buildItems = [
-  { icon: Cpu, label: "CPU", name: "Ryzen 5 7600", price: 45000, image: cpuImg },
-  { icon: Monitor, label: "GPU", name: "RTX 4060", price: 65000, image: gpuImg },
+  { icon: Cpu, label: "CPU", name: "Ryzen 5 7600", price: 45000, image: cpuAmdImg },
+  { icon: Monitor, label: "GPU", name: "RTX 4060", price: 65000, image: gpuNvidiaImg },
   { icon: MemoryStick, label: "RAM", name: "Corsair 16GB DDR5", price: 12500, image: ramImg },
 ];
 
