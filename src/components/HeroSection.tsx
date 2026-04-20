@@ -11,7 +11,7 @@ export function HeroSection() {
           className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold mb-4 text-foreground"
           style={{ animationDelay: "0.1s", animation: "fade-in-up 0.8s ease-out forwards" }}
         >
-          Assemblez <span className="neon-text-cyan">l'Impossible</span>
+          Assemble <span className="neon-text-cyan">the Impossible</span>
         </h1>
         <p
           className="font-body text-lg md:text-xl text-muted-foreground mb-8 opacity-0"
@@ -24,7 +24,7 @@ export function HeroSection() {
           className="inline-block btn-neon px-8 py-3 rounded-lg font-heading text-sm tracking-widest uppercase opacity-0"
           style={{ animation: "fade-in-up 0.8s ease-out 0.5s forwards" }}
         >
-          Explorer les Produits
+          Explore Products
         </Link>
       </div>
 

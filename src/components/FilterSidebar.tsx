@@ -22,7 +22,7 @@ export function FilterSidebar(props: FilterProps) {
       {/* Categories */}
       <div>
         <h4 className="font-heading text-sm font-semibold text-foreground mb-3 uppercase tracking-wider">
-          Catégorie
+          Category
         </h4>
         <div className="space-y-2">
           {categories.map((cat) => (
@@ -44,7 +44,7 @@ export function FilterSidebar(props: FilterProps) {
       {/* Brands */}
       <div>
         <h4 className="font-heading text-sm font-semibold text-foreground mb-3 uppercase tracking-wider">
-          Marque
+          Brand
         </h4>
         <div className="space-y-2">
           {brands.map((brand) => (
@@ -66,7 +66,7 @@ export function FilterSidebar(props: FilterProps) {
       {/* Price Range */}
       <div>
         <h4 className="font-heading text-sm font-semibold text-foreground mb-3 uppercase tracking-wider">
-          Prix (DZD)
+          Price (DZD)
         </h4>
         <input
           type="range"
@@ -78,8 +78,8 @@ export function FilterSidebar(props: FilterProps) {
           className="w-full accent-primary"
         />
         <div className="flex justify-between text-xs text-muted-foreground mt-1 font-body">
-          <span>{props.priceRange[0].toLocaleString("fr-DZ")} دج</span>
-          <span>{props.priceRange[1].toLocaleString("fr-DZ")} دج</span>
+          <span>{props.priceRange[0].toLocaleString("en-US")} DZD</span>
+          <span>{props.priceRange[1].toLocaleString("en-US")} DZD</span>
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@ export function FilterSidebar(props: FilterProps) {
           <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
           <div className="absolute left-0 top-0 bottom-0 w-72 glass-strong p-6 overflow-y-auto">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="font-heading text-lg font-bold text-foreground">Filtres</h3>
+              <h3 className="font-heading text-lg font-bold text-foreground">Filters</h3>
               <button onClick={() => setMobileOpen(false)}>
                 <X className="h-5 w-5 text-muted-foreground" />
               </button>
@@ -115,7 +115,7 @@ export function FilterSidebar(props: FilterProps) {
       <aside className="hidden lg:block w-56 shrink-0 glass rounded-xl p-5 h-fit sticky top-24">
         <h3 className="font-heading text-sm font-bold text-foreground mb-5 uppercase tracking-wider flex items-center gap-2">
           <SlidersHorizontal className="h-4 w-4 text-primary" />
-          Filtres
+          Filters
         </h3>
         {content}
       </aside>

@@ -24,10 +24,10 @@ export function ProductCatalog() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-2">
-            Nos <span className="text-primary neon-text-cyan">Produits</span>
+            Our <span className="text-primary neon-text-cyan">Products</span>
           </h2>
           <p className="text-muted-foreground font-body">
-            Les meilleurs composants aux prix algériens
+            The best components at Algerian prices
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export function ProductCatalog() {
           <div className="flex-1">
             {filtered.length === 0 ? (
               <div className="text-center py-20">
-                <p className="text-muted-foreground font-body">Aucun produit trouvé</p>
+                <p className="text-muted-foreground font-body">No products found</p>
               </div>
             ) : (
               <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">

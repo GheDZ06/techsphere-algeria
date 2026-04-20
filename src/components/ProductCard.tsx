@@ -38,7 +38,7 @@ export function ProductCard({ product }: { product: Product }) {
             className="btn-neon px-4 py-2 rounded-lg text-primary-foreground text-sm font-semibold flex items-center gap-2"
           >
             <ShoppingCart className="h-4 w-4" />
-            Ajouter
+            Add
           </button>
         </div>
       </div>

@@ -14,7 +14,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-muted-foreground font-body">
-              Composants PC de dernière génération aux meilleurs prix en Algérie.
+              Next-gen PC components at the best prices in Algeria.
             </p>
           </div>
 
@@ -23,23 +23,23 @@ export function Footer() {
               Navigation
             </h4>
             <div className="space-y-2 text-sm text-muted-foreground font-body">
-              <Link to="/" className="block hover:text-primary transition-colors">Accueil</Link>
-              <Link to="/products" className="block hover:text-primary transition-colors">Produits</Link>
-              <Link to="/about" className="block hover:text-primary transition-colors">À propos</Link>
+              <Link to="/" className="block hover:text-primary transition-colors">Home</Link>
+              <Link to="/products" className="block hover:text-primary transition-colors">Products</Link>
+              <Link to="/about" className="block hover:text-primary transition-colors">About</Link>
               <Link to="/contact" className="block hover:text-primary transition-colors">Contact</Link>
             </div>
           </div>
 
           <div>
             <h4 className="font-heading text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
-              Catégories
+              Categories
             </h4>
             <div className="space-y-1 text-sm text-muted-foreground font-body">
-              <p>Cartes Graphiques (GPU)</p>
-              <p>Processeurs (CPU)</p>
-              <p>Mémoire (RAM)</p>
-              <p>Stockage (SSD/HDD)</p>
-              <p>Boîtiers (Case)</p>
+              <p>Graphics Cards (GPU)</p>
+              <p>Processors (CPU)</p>
+              <p>Memory (RAM)</p>
+              <p>Storage (SSD/HDD)</p>
+              <p>Cases</p>
             </div>
           </div>
 
@@ -54,14 +54,14 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>Alger Centre</span>
+                <span>Algiers Center</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="mt-8 pt-6 border-t border-border/30 text-center text-xs text-muted-foreground font-body">
-          © 2026 TechSphere DZ. Tous droits réservés.
+          © 2026 TechSphere DZ. All rights reserved.
         </div>
       </div>
     </footer>
