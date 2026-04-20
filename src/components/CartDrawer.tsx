@@ -25,7 +25,7 @@ export function CartDrawer() {
         <div className="flex items-center justify-between p-5 border-b border-border/50">
           <h2 className="font-heading text-lg font-bold text-foreground flex items-center gap-2">
             <ShoppingBag className="h-5 w-5 text-primary" />
-            Panier
+            Cart
           </h2>
           <button onClick={() => setCartOpen(false)} className="p-1 hover:bg-muted rounded">
             <X className="h-5 w-5 text-muted-foreground" />
@@ -34,7 +34,7 @@ export function CartDrawer() {
 
         <div className="flex-1 overflow-y-auto p-5 space-y-4">
           {items.length === 0 ? (
-            <p className="text-center text-muted-foreground font-body py-12">Votre panier est vide</p>
+            <p className="text-center text-muted-foreground font-body py-12">Your cart is empty</p>
           ) : (
             items.map(({ product, quantity }) => (
               <div key={product.id} className="flex gap-3 glass rounded-lg p-3">
@@ -66,16 +66,16 @@ export function CartDrawer() {
         {items.length > 0 && (
           <div className="p-5 border-t border-border/50 space-y-3">
             <div className="flex justify-between text-sm font-body text-muted-foreground">
-              <span>Sous-total</span><span>{formatDZD(subtotal())}</span>
+              <span>Subtotal</span><span>{formatDZD(subtotal())}</span>
             </div>
             <div className="flex justify-between text-sm font-body text-muted-foreground">
-              <span>TVA (19%)</span><span>{formatDZD(tax())}</span>
+              <span>VAT (19%)</span><span>{formatDZD(tax())}</span>
             </div>
             <div className="flex justify-between text-lg font-heading font-bold text-foreground pt-2 border-t border-border/50">
               <span>Total</span><span className="neon-text-cyan">{formatDZD(total())}</span>
             </div>
             <button onClick={handleOrder} className="w-full btn-neon py-3 rounded-lg font-heading text-sm tracking-wider uppercase mt-2">
-              Commander
+              Checkout
             </button>
           </div>
         )}

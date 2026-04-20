@@ -20,7 +20,7 @@ export function BuildConfigurator() {
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-2">
             Live Build <span className="text-primary neon-text-cyan">Configurator</span>
           </h2>
-          <p className="text-muted-foreground font-body">Estimez le prix de votre build</p>
+          <p className="text-muted-foreground font-body">Estimate the price of your build</p>
         </div>
 
         <div className="max-w-4xl mx-auto glass rounded-2xl p-6 md:p-8">
@@ -49,7 +49,7 @@ export function BuildConfigurator() {
 
           <div className="flex items-center justify-between glass rounded-xl p-4">
             <span className="font-heading text-lg font-semibold text-foreground">
-              Prix Total Estimé
+              Estimated Total Price
             </span>
             <span className="font-heading text-2xl font-bold text-primary neon-text-cyan">
               {formatDZD(total)}

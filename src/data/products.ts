@@ -84,5 +84,5 @@ export const categories = ["GPU", "CPU", "RAM", "Storage", "HDD", "PSU", "Case",
 export const brands = ["MSI", "ASUS", "Corsair", "Intel", "AMD", "Samsung", "Kingston", "G.Skill", "Seagate", "Western Digital", "NZXT"];
 
 export function formatDZD(price: number): string {
-  return price.toLocaleString("fr-DZ") + " دج";
+  return price.toLocaleString("en-US") + " DZD";
 }

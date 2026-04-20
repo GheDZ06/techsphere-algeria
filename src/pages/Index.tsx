@@ -8,10 +8,10 @@ import { Cpu, ShieldCheck, Truck, Headphones } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const features = [
-  { icon: ShieldCheck, title: "Garantie 2 ans", desc: "Tous nos produits sont garantis 2 ans minimum." },
-  { icon: Truck, title: "Livraison Rapide", desc: "Livraison partout en Algérie sous 48h." },
-  { icon: Headphones, title: "Support 24/7", desc: "Notre équipe est disponible pour vous aider." },
-  { icon: Cpu, title: "Composants Authentiques", desc: "100% de produits originaux certifiés." },
+  { icon: ShieldCheck, title: "2-Year Warranty", desc: "All our products come with a minimum 2-year warranty." },
+  { icon: Truck, title: "Fast Delivery", desc: "Delivery anywhere in Algeria within 48h." },
+  { icon: Headphones, title: "24/7 Support", desc: "Our team is always available to help you." },
+  { icon: Cpu, title: "Authentic Components", desc: "100% certified original products." },
 ];
 
 const Index = () => {
@@ -27,7 +27,7 @@ const Index = () => {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
-              Pourquoi <span className="neon-text-cyan">TechSphere DZ</span> ?
+              Why <span className="neon-text-cyan">TechSphere DZ</span>?
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {features.map((f) => (
@@ -47,16 +47,16 @@ const Index = () => {
         <section className="py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Prêt à construire votre <span className="neon-text-cyan">PC</span> ?
+              Ready to build your <span className="neon-text-cyan">PC</span>?
             </h2>
             <p className="text-muted-foreground font-body mb-8 max-w-md mx-auto">
-              Parcourez notre catalogue complet et trouvez les composants parfaits pour votre build.
+              Browse our full catalog and find the perfect components for your build.
             </p>
             <Link
               to="/products"
               className="inline-block btn-neon px-8 py-3 rounded-lg font-heading text-sm tracking-widest uppercase"
             >
-              Voir tous les produits
+              View all products
             </Link>
           </div>
         </section>
